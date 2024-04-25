@@ -1,0 +1,53 @@
+//****************************************************************************** 
+//      File Name     : tb_comp_list.fl
+//      Description   : File contains the list of Directories which is been
+//                      included during the compilation. 
+//****************************************************************************** 
+//      Author        : 
+//      Created on    : 
+//      File Id       : 
+//****************************************************************************** 
+
+//----------------------------------------
+// UVM Include Directories
+//----------------------------------------
+//+incdir+../bin/uvm_src/src
+//----------------------------------------
+
+//----------------------------------------
+// UTMI RTL Directories
+//----------------------------------------
++incdir+../../dut/
+//----------------------------------------
+// UTMI TB Directories
+//----------------------------------------
++incdir+../tb/
+
+// RTL and TB Files
+
+../../dut/decoding_10b8b.v 
+../../dut/defines.vh 
+../../dut/disparity.v 
+../../dut/encoder_3b4b.v 
+../../dut/encoder_5b6b.v 
+../../dut/encoder_8b10b.v  
+../../dut/encoder.v 
+
+
+../../dut/jtag_1149_d10_crc_lfsr.v
+ 
+../../dut/jtag_1149_d10_master.v 
+../../dut/jtag_1149_d10_mstr_rx_ctrl_top.v
+../../dut/jtag_1149_d10_mstr_rx_error_detector.v
+../../dut/jtag_1149_d10_mstr_rx_flow_ctrl_detector.v 
+../../dut/jtag_1149_d10_mstr_rx_pkt_detector.v 
+../../dut/jtag_1149_d10_mstr_rx_top.v 
+../../dut/jtag_1149_d10_mstr_sram_rd_ctrl.v
+../../dut/jtag_1149_d10_mstr_status_mux.v           
+../../dut/jtag_1149_d10_mstr_tx_ctrl.v        
+../../dut/jtag_1149_d10_mstr_tx_ctrl_top.v
+../../dut/jtag_1149_d10_mstr_tx_top.v
+
+../../tb/ieee_1149_10_package.svh
+../../tb/ieee_1149_10_tb_top.sv
+

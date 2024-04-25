@@ -1,0 +1,220 @@
+QuestaSim qverilog 10.6c Compiler 2017.07 Jul 25 2017
+Start time: 09:10:49 on Apr 17,2024
+qverilog -sv -novopt "+define+QUESTA" -f ../compile/comp_list.fl -R "+UVM_TESTNAME=ieee_1149_10_idle_count_error_check_test" "+UVM_VERBOSITY=UVM_LOW" "+define+QUESTA_DUMP" -do "add wave -r /*;;  run -a; quit -f" -sv_seed random 
+-- Compiling module decoding_10b8b
+-- Compiling module disparity
+-- Compiling module encoder_3b4b
+-- Compiling module encoder_5b6b
+-- Compiling module encoder_8b10b
+-- Compiling module encoder
+-- Compiling module jtag_1149_d10_crc_lfsr
+-- Compiling module jtag_1149_d10_master
+-- Compiling module jtag_1149_d10_mstr_rx_ctrl_top
+-- Compiling module jtag_1149_d10_mstr_rx_error_detector
+-- Compiling module jtag_1149_d10_mstr_rx_flow_ctrl_detector
+-- Compiling module jtag_1149_d10_mstr_rx_pkt_detector
+-- Compiling module jtag_1149_d10_mstr_rx_top
+-- Compiling module jtag_1149_d10_mstr_sram_rd_ctrl
+-- Compiling module jtag_1149_d10_mstr_status_mux
+-- Compiling module jtag_1149_d10_mstr_tx_ctrl
+-- Compiling module jtag_1149_d10_mstr_tx_ctrl_top
+-- Compiling module jtag_1149_d10_mstr_tx_top
+-- Compiling package ieee_1149_tb_pkg
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+** Note: (qverilog-2286) ../../tb/ieee_1149_10_package.svh(3): Using implicit +incdir+/tools/questa10_6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+** Warning: ../../tb/ieee_1149_10_scoreboard.sv(137): (qverilog-2250) Function "write" has no return value assignment.
+-- Compiling interface ieee_1149_10_intf
+-- Compiling module encoder_8b10b_tb
+-- Compiling module decoder_8b10b_tb
+-- Compiling module tb_disparity
+-- Compiling module tb_encoder_3b4b
+-- Compiling module tb_encoder_5b6b
+** Warning: ** while parsing file included at ../../tb/ieee_1149_10_tb_top.sv(5)
+** while parsing file included at ../../tb/tb_encoder_8b10b.sv(16)
+** while parsing file included at ../../tb/./tb_encoder.sv(13)
+** at ../../tb/././tb_encoder_3b4b.sv(12): (qverilog-2275) 'tb_encoder_3b4b' already exists and will be overwritten.
+-- Compiling module tb_encoder_3b4b
+** Warning: ** while parsing file included at ../../tb/ieee_1149_10_tb_top.sv(5)
+** while parsing file included at ../../tb/tb_encoder_8b10b.sv(16)
+** while parsing file included at ../../tb/./tb_encoder.sv(14)
+** at ../../tb/././tb_encoder_5b6b.sv(12): (qverilog-2275) 'tb_encoder_5b6b' already exists and will be overwritten.
+-- Compiling module tb_encoder_5b6b
+-- Compiling module tb_encoder
+-- Compiling module tb_encoder_8b10b
+-- Compiling module decoding_10b8b_tb
+-- Compiling module top
+-- Importing package ieee_1149_tb_pkg
+
+Top level modules:
+	encoder_8b10b_tb
+	decoder_8b10b_tb
+	tb_disparity
+	tb_encoder_3b4b
+	tb_encoder_5b6b
+	tb_encoder
+	top
+Reading pref.tcl
+
+# 10.6c
+
+# vsim -lib work "+UVM_TESTNAME=ieee_1149_10_idle_count_error_check_test" "+UVM_VERBOSITY=UVM_LOW" "+define+QUESTA_DUMP" -do "add wave -r /*;;  run -a; quit -f" -sv_seed random encoder_8b10b_tb decoder_8b10b_tb tb_disparity tb_encoder_3b4b tb_encoder_5b6b tb_encoder top -c -appendlog -l qverilog.log -novopt 
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.encoder_8b10b_tb
+# Loading work.decoder_8b10b_tb
+# Loading work.tb_disparity
+# Loading work.tb_encoder_3b4b
+# Loading work.tb_encoder_5b6b
+# Loading work.tb_encoder
+# Loading work.encoder_5b6b
+# Loading work.encoder_3b4b
+# Loading work.ieee_1149_10_intf
+# Loading mtiUvm.uvm_pkg
+# Loading work.ieee_1149_tb_pkg
+# Loading work.top
+# Loading work.tb_encoder_8b10b
+# Loading work.encoder
+# Loading work.disparity
+# Loading work.decoding_10b8b_tb
+# Loading work.jtag_1149_d10_master
+# Loading work.jtag_1149_d10_mstr_rx_top
+# Loading work.jtag_1149_d10_mstr_rx_ctrl_top
+# Loading work.jtag_1149_d10_mstr_rx_pkt_detector
+# Loading work.jtag_1149_d10_mstr_rx_error_detector
+# Loading work.jtag_1149_d10_mstr_rx_flow_ctrl_detector
+# Loading work.jtag_1149_d10_crc_lfsr
+# Loading work.decoding_10b8b
+# Loading work.jtag_1149_d10_mstr_tx_top
+# Loading work.jtag_1149_d10_mstr_tx_ctrl_top
+# Loading work.jtag_1149_d10_mstr_tx_ctrl
+# Loading work.encoder_8b10b
+# Loading work.jtag_1149_d10_mstr_sram_rd_ctrl
+# Loading work.jtag_1149_d10_mstr_status_mux
+# Loading mtiUvm.questa_uvm_pkg
+# ** Warning: (vsim-3017) ../../tb/ieee_1149_10_tb_top.sv(50): [TFMPC] - Too few port connections. Expected 16, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /top/DUT File: ../../dut/jtag_1149_d10_master.v
+# ** Warning: (vsim-3722) ../../tb/ieee_1149_10_tb_top.sv(50): [TFMPC] - Missing connection for port 'sram_we'.
+# ** Warning: (vsim-3722) ../../tb/ieee_1149_10_tb_top.sv(50): [TFMPC] - Missing connection for port 'sram_wr_data'.
+# ** Warning: (vsim-3722) ../../tb/ieee_1149_10_tb_top.sv(50): [TFMPC] - Missing connection for port 'compare_delay'.
+# ** Warning: (vsim-3722) ../../tb/ieee_1149_10_tb_top.sv(50): [TFMPC] - Missing connection for port 'jtag_1149_d10_mstr_rsp_data'.
+# ** Warning: (vsim-3722) ../../tb/ieee_1149_10_tb_top.sv(50): [TFMPC] - Missing connection for port 'jtag_1149_d10_mstr_rsp_data_be'.
+# ** Warning: (vsim-3722) ../../tb/ieee_1149_10_tb_top.sv(50): [TFMPC] - Missing connection for port 'jtag_1149_d10_mstr_rsp_data_vld'.
+# ** Warning: (vsim-3722) ../../tb/ieee_1149_10_tb_top.sv(50): [TFMPC] - Missing connection for port 'jtag_1149_d10_mstr_crc_err_cnt'.
+# ** Warning: (vsim-3722) ../../tb/ieee_1149_10_tb_top.sv(50): [TFMPC] - Missing connection for port 'dbg_mux_sel'.
+# ** Warning: (vsim-3017) ../../dut/jtag_1149_d10_mstr_tx_top.v(81): [TFMPC] - Too few port connections. Expected 34, found 33.
+#    Time: 0 ps  Iteration: 0  Instance: /top/DUT/i_mstr_tx_top/i_mstr_tx_ctrl_top File: ../../dut/jtag_1149_d10_mstr_tx_ctrl_top.v
+# ** Warning: (vsim-3722) ../../dut/jtag_1149_d10_mstr_tx_top.v(81): [TFMPC] - Missing connection for port 'ptrn_end'.
+# ** Warning: (vsim-3764) /tools/questa10_6c/questasim/linux/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh(114): Stand-alone call to function 'write' treated as implicit void cast.
+#    Time: 0 ps  Iteration: 0  Region: /uvm_pkg::uvm_analysis_imp #(bit[287:0], ieee_1149_tb_pkg::ieee_1149_10_scoreboard #(128)) File: /tools/questa10_6c/questasim/linux/../verilog_src/uvm-1.1d/src/uvm_pkg.sv
+# ** Warning: (vsim-3764) ../../tb/ieee_1149_10_sequence_lib.sv(37): Stand-alone call to function 'get' treated as implicit void cast.
+#    Time: 0 ps  Iteration: 0  Region: /ieee_1149_tb_pkg::ieee_1149_10_target_sequence #(128) File: ../../tb/ieee_1149_10_package.svh
+# Loading /tools/questa10_6c/questasim/uvm-1.1d/linux/uvm_dpi.so
+# Sv_Seed = 3460833409
+# add wave -r /*
+# 
+#   run -a
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test ieee_1149_10_idle_count_error_check_test...
+# agent_pld_size=        128
+#                   55 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~IDLE CHAR COUNT CHECK PASS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#                   55 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~IDLE CHAR COUNT CHECK PASS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#                   55 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~IDLE CHAR COUNT CHECK PASS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# inside config packet driver 
+# *********************************************************************************
+#                              CONFIG PACKET                                       
+# *********************************************************************************
+# UVM_ERROR ../../tb/ieee_1149_10_scoreboard.sv(235) @ 125000: uvm_test_top.env1.scoreboard [uvm_scoreboard] SOP OF PACKETS NOT MATCHED
+# the unmatched data is xx fb
+# UVM_ERROR ../../tb/ieee_1149_10_scoreboard.sv(248) @ 125000: uvm_test_top.env1.scoreboard [uvm_scoreboard] CMD FIELD OF PACKETS NOT MATCHED
+# UVM_ERROR ../../tb/ieee_1149_10_scoreboard.sv(260) @ 125000: uvm_test_top.env1.scoreboard [uvm_scoreboard] TARGET ID FIELD OF PACKETS NOT MATCHED
+# UVM_ERROR ../../tb/ieee_1149_10_scoreboard.sv(273) @ 125000: uvm_test_top.env1.scoreboard [uvm_scoreboard] the config packet is corrupted
+# UVM_ERROR ../../tb/ieee_1149_10_scoreboard.sv(366) @ 125000: uvm_test_top.env1.scoreboard [uvm_scoreboard] EOP OF PACKETS NOT MATCHED
+#                  135 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~OPCODE ERROR CHECK FAIL~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#                  145 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~OPCODE ERROR CHECK FAIL~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#                  155 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~OPCODE ERROR CHECK FAIL~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#                  175 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~OPCODE ERROR CHECK PASS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#                  185 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~IDLE CHAR COUNT CHECK PASS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#                  185 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~IDLE CHAR COUNT CHECK PASS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#                  185 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~IDLE CHAR COUNT CHECK PASS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#                  185 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~IDLE CHAR COUNT CHECK PASS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#                  185 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~IDLE CHAR COUNT CHECK PASS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#                  185 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~IDLE CHAR COUNT CHECK PASS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#                  185 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~IDLE CHAR COUNT CHECK PASS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#                  185 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~IDLE CHAR COUNT CHECK PASS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#                  185 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~IDLE CHAR COUNT CHECK PASS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#                  185 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~IDLE CHAR COUNT CHECK PASS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#                  185 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~IDLE CHAR COUNT CHECK PASS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#                  185 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~IDLE CHAR COUNT CHECK PASS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#                  185 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~IDLE CHAR COUNT CHECK PASS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#                  185 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~OPCODE ERROR CHECK FAIL~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#                  195 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~IDLE CHAR COUNT CHECK PASS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#                  195 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~OPCODE ERROR CHECK FAIL~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#                  205 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~EOP ERROR CHECK FAIL~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#                  205 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~EOP ERROR WITH SPCL CHARACTER IN EOP CHECK FAIL~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#                  205 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~IDLE CHAR COUNT CHECK PASS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#                  205 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~OPCODE ERROR CHECK FAIL~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#                  215 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~EOP ERROR CHECK FAIL~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#                  215 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~EOP ERROR WITH SPCL CHARACTER IN EOP CHECK FAIL~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#                  215 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~IDLE CHAR COUNT CHECK PASS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#                  225 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~EOP ERROR CHECK FAIL~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#                  225 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~EOP ERROR WITH SPCL CHARACTER IN EOP CHECK FAIL~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#                  225 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~IDLE CHAR COUNT CHECK PASS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#                  235 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~EOP ERROR CHECK FAIL~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#                  235 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~EOP ERROR WITH SPCL CHARACTER IN EOP CHECK FAIL~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#                  235 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~IDLE CHAR COUNT CHECK PASS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#                  245 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~IDLE CHAR COUNT CHECK PASS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1268) @ 255000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :    2
+# UVM_WARNING :    0
+# UVM_ERROR :    5
+# UVM_FATAL :    0
+# ** Report counts by id
+# [RNTST]     1
+# [TEST_DONE]     1
+# [uvm_scoreboard]     5
+# ** Note: $finish    : /tools/questa10_6c/questasim/linux/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 255 ns  Iteration: 61  Instance: /top
+# End time: 09:11:43 on Apr 17,2024, Elapsed time: 0:00:54
+# Errors: 0, Warnings: 17
+ 
+ ################# TEST_RESULT ################# 
+ TEST-NAME: ieee_1149_10_idle_count_error_check_test 
+ RESULT: TEST_PASSED 
+ ############################################### 
